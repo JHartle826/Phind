@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Access</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ff4500;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .recipe-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .recipe-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+        }
+        .recipe-card img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .form-container {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 300px;
+        }
+        form button {
+            background-color: #ff4500;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recipe Access</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="recipe-container">
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/300x200" alt="Recipe Image">
+            <h2>Recipe Title</h2>
+            <p>Short description of the recipe.</p>
+        </div>
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/300x200" alt="Recipe Image">
+            <h2>Recipe Title</h2>
+            <p>Short description of the recipe.</p>
+        </div>
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/300x200" alt="Recipe Image">
+            <h2>Recipe Title</h2>
+            <p>Short description of the recipe.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Recipe Access. All rights reserved.
+    </footer>
+    <div class="form-container">
+        <form>
+            <h2>Subscribe for Updates</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
